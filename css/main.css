@@ -1,0 +1,120 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-color: #2f323c;
+}
+
+.AllGhost{
+    width:1200px;
+    margin:0 auto;
+    
+}
+.AllGhost .ghost{
+    width:140px;
+    margin:200px auto;
+    margin-right:100px;
+    position:relative;
+    float:left;
+    animation:upAnddown 1s linear 0s infinite alternate;
+    -webkit-animation:upAnddown 1s linear 0s infinite alternate;
+}
+.AllGhost .ghost .body{
+    width:140px;
+    height:180px;
+    background:#4e5364;
+    border-radius:100% 100% 0 0;
+    position:relative;
+}
+.AllGhost .ghost .eye_left{
+    width:15px;
+    height:20px;
+    border-radius:100%;
+    background:#9900cc;
+    border:2px solid #9900cc;
+    box-shadow:-2px -2px 2px #fff inset;
+    position:absolute;
+    top:60px;
+    left:45px;
+}
+.AllGhost .ghost .eye_right{
+    width:15px;
+    height:20px;
+    border-radius:100%;
+    background:#9900cc;
+    border:2px solid #9900cc;
+    box-shadow:-2px -2px 2px #fff inset;
+    position:absolute;
+    top:60px;
+    right:30px;
+}
+.AllGhost .ghost .mouth{
+    width:15px;
+    height:20px;
+    border-radius:100%;
+    border:2px solid #9900cc;
+    position:absolute;
+    top:90px;
+    left:70px;
+}
+.AllGhost .ghost .wave{
+    width:140px;
+    height:20px;
+    position:absolute;
+    background-size: 25px 20px;
+    background-image: radial-gradient(circle at 50% 0%, #4e5364 71%, transparent 71%);
+}
+.shadow{
+    width:140px;
+    height:15px;
+    margin:0 auto;
+    background-color: #d9d9d9;
+    border-radius:100%;
+    opacity: 0.3;
+    margin-top:70px;
+    animation:shadow 1s linear 0s infinite alternate;
+    -webkit-animation:shadow 1s linear 0s infinite alternate;
+
+}
+@keyframes upAnddown{
+    from{
+        margin-top:100px;
+    }
+    to{
+        margin-top:70px;
+    }
+}
+@-webkit-keyframes upAnddown{
+    from{
+        margin-top:100px;
+    }
+    to{
+        margin-top:70px;
+    }
+}
+
+
+@keyframes shadow{
+    from{
+        margin-top:70px;
+        opacity: 0.3;
+    }
+    to{
+        margin-top:100px;
+        opacity: 0.1;
+    }
+}
+@-webkit-keyframes shadow{
+    from{
+        margin-top:70px;
+        opacity: 0.3;
+    }
+    to{
+        margin-top:100px;
+        opacity: 0.1;
+    }
+
+}
+
+
